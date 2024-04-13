@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Color } from "three";
 
-export functin Scene() {
+export function Scene() {
   const refTrees = useRef(null);
 
   useFrame(() => {
@@ -14,8 +14,14 @@ export functin Scene() {
 
   return (
     <>
-    <ambientLight intensity={0.1} />
-    <directionalLight color="white" position={[15,15,15]} castShadow shadow-mapSize-with={2048} shadow-mapSize-height={2048} />
+      <ambientLight intensity={0.1} />
+      <directionalLight
+        color="white"
+        position={[15, 15, 15]}
+        castShadow
+        shadow-mapSize-with={2048}
+        shadow-mapSize-height={2048}
+      />
     </>
   );
 }
