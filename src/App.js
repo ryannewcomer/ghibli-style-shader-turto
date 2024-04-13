@@ -1,9 +1,9 @@
 import "./App.css";
-
+import { FiberContainer } from "./FiberContainer";
 function App() {
   return (
     <div className="App">
-      <h1> ghibli-style-shader </h1>
+      <FiberContainer />
     </div>
   );
 }
